@@ -45,7 +45,7 @@ img {
 }
 
 #services {
-  background: url(../img/building.jpg) no-repeat top center cover;
+  background: url('../img/building.jpg') no-repeat top center fixed;
   min-height: 300px;
   position: relative;
   overflow: hidden;
@@ -62,7 +62,7 @@ img {
 }
 
 #showcase-inner {
-  background: url('../img/building.jpg') no-repeat top center cover;
+  background: url('../img/building.jpg');
   position: relative;
   overflow: hidden;
   min-height: 200px;
