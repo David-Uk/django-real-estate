@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'pserver',
     'pages',
     'listings',
-    'realtors',
+    'realtor',
 ]
 
 MIDDLEWARE = [
