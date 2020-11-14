@@ -17,9 +17,9 @@ def index(request):
 
 
 def about(request):
-    realtors = Realtor.objects.order_by('-hire_date')
+    realtors = Realtor.objects.order_by('_hire_date')
     mvp_realtors = Realtor.objects.all().filter(is_mvp=True)
-    context = {
+    contex = {
         'realtors': realtors,
         'mvp_realtors': mvp_realtors
     }
