@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 
+
 def register(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']

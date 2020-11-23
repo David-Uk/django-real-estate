@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 
+
 def register(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']
@@ -50,7 +51,7 @@ def login(request):
             messages.success(request, 'Welcome {}'.format(username))
             return redirect('dashboard')
         else:
-            messages.error('Invalid credentials')
+            messages.error(request,'Invalid credentials')
             return redirect('login')
     return render(request, 'accounts/login.html')
 
@@ -59,7 +60,7 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
         messages.success(request, 'You are now logged out')
-    return redirect('index')
+        return redirect('index')
 
 
 def dashboard(request):
